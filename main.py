@@ -18,8 +18,8 @@ def mult_nums(num1, num2):
 
 @app.route('/divd/<num1>/<num2>')
 def divd_nums(num1, num2):
-    if int(num2) != 0:
-        res=str(float(num1)/int(num2))
-    else:
+    if int(num2) == 0:
         res=num2
+    else:
+        res=str(float(num1)/int(num2))
     return render_template('divide.html',num1=num1,num2=num2,res=res)
