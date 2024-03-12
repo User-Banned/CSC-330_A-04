@@ -4,8 +4,8 @@
         <title>Basic Calculator</title>
     </HEAD>
     <body>
-        {% if {{num2}} == 0 %}
-            <h1 align=center>Not Divisible by Zero</h1>
+        {% if num2 == res %}
+            <h1 align=center>Divide by Zero is Not Possible</h1>
         {% else %}
             <h1 align=center>{{num1}} / {{num2}} = {{res}}</h1>
         {% endif %}
