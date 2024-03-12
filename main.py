@@ -8,7 +8,7 @@ def add_nums(num1, num2):
 
 @app.route('/sub/<num1>/<num2>')
 def sub_nums(num1, num2):
-    res=str(int(num1)+int(num2))
+    res=str(int(num1)-int(num2))
     return render_template('subtract.html',num1=num1,num2=num2,res=res)
 
 @app.route('/mult/<num1>/<num2>')
