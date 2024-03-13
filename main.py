@@ -4,6 +4,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return render_template('home.html')
+
 @app.route('/add/<num1>/<num2>')
 def add_nums(num1, num2):
     if num1.isdigit()==num2.isdigit()==True:
